@@ -3,7 +3,7 @@
 ## Abstract
 
 ## The Problem
-When visualising a large dataset there is a fitting issue in the available screen space. We will contrain the record to just one attribute thus approximating the dataset to a one-dimension object and the problem remain of the best way to map this object to a 2-dimensional space (screen space) that is in most cases a rectangle with the width larger than the height.
+When visualising a large dataset there is a fitting issue in the available screen space. We will constrain the record to just one attribute thus approximating the dataset to a one-dimension object and the problem remains related to the best way to map this object to a 2-dimensional space (screen space) that is in most cases a rectangle with the width larger than the height.
 Given a large ordered dataset D of size s we will find a mapping to a cartesian rectangle region V (viewport) of size width, height (w, h) in such a way that we will be able to approximate easily the location (x, y) in V of a record at location l in D. And vice versa.
 ### Proposed Solution
 Since we do not know the order of s, we need to consider a scaleable solution. The most obvious is to have a space-covering 1-d fractal since the fractal spans the 2-d space and increases its length at each iteration.
@@ -169,29 +169,51 @@ This clearly shows a higher degree of local symmetry than Hilbert curve together
 
 ## Coordinate Transformations
 ### Determine the Number of Iterations
-In order to map the dataset of size s, we will need n iterations. The euclidian metric of this fractal is 2.(6)^i * l where i is the number if iterations and l is the initial length of the first iteration. Therefore, given l, n is the first iteration where s is less than 2.(6)^n * l. n > log(2.(6), s/l).
+In order to map the dataset of size s, we will need n iterations. The euclidian metric of this fractal is 2.(6)^i * L where i is the number if iterations and L is the initial length of the first iteration. Therefore, given L, n is the first iteration where s is less than 2.(6)^n * L. n > log(2.(6), s/L).
 ### Determine the Inflexion Points
-Each iteration will have 7^i + 7^(i-1) + .. + 1 inflexion points. Their relation to the base 7 of numeration is evident. The length of the base 7 number is the number of iterations i.
-Tahking into consideration the origin as the first point of the arc of the first iteration, the inflection points for the first iteration have the coordinates: (0, 0) and ((l * sqrt(2))/(2 * PI), 0) where l is the length of the arc.
+Each iteration will have 7^i + 7^(i-1) + .. + 1 inflexion points. Their relation to the base 7 of numeration is evident. The length of the base 7 number is the number of iterations i. We can use base 7 of numeration to name the inflexion points.
+Taking into consideration the origin as the first point of the arc of the first iteration, the inflection points for the first iteration have the coordinates: (0, 0) and ((L * sqrt(2))/(2 * PI), 0) where L is the length of the arc.
 For next iteration:
 
-(0 ,0) 
+point 0: (0 ,0) 
 
-(0, (l * sqrt(2))/(2 * PI * 2.(6))) 
+point 1: (0, (L * sqrt(2))/(2 * PI * 2.(6))) 
 
-(0, (l * sqrt(2))/(PI * 2.(6)))) 
+point 2: (0, (L * sqrt(2))/(PI * 2.(6)))) 
 
-((l * sqrt(2))/(2 * PI * 2.(6))), (l * sqrt(2))/(PI * 2.(6)))) 
+point 3: ((L * sqrt(2))/(2 * PI * 2.(6))), (L * sqrt(2))/(PI * 2.(6)))) 
 
-((l * sqrt(2))/(PI * 2.(6))), (l * sqrt(2))/(PI * 2.(6)))) 
+point 4: ((L * sqrt(2))/(PI * 2.(6))), (L * sqrt(2))/(PI * 2.(6)))) 
+ 
+point 5: ((L * sqrt(2))/(2 * PI), (L * sqrt(2))/(PI * 2.(6)))) 
 
-((l * sqrt(2))/(2 * PI), (l * sqrt(2))/(PI * 2.(6)))) 
+point 6: ((L * sqrt(2))/(2 * PI), (L * sqrt(2))/(2 * PI * 2.(6)))) 
 
-((l * sqrt(2))/(2 * PI), (l * sqrt(2))/(2 * PI * 2.(6)))) 
+point 10: ((L * sqrt(2))/(2 * PI), 0)
 
-((l * sqrt(2))/(2 * PI), 0)
+The locations of the points on the fractal curve are equaliy spaced.
+
+We do not need to calculate the points for the next iterations explicitly since we can use a recursive function to do so. We only need to calculate the coordinates of the offset of the reminder of the location l on the last iteration n.
  
 ## Visual Alternatives
+### Pixel Approximation
+We will consider a more restrictive case where the curve is approximated to pixels or squares and the curve is only used as a reading guide.
+
+![](http://oroboro-oroboro.rhcloud.com/file/LHX2kpsqiag83DC2s)
+
+#### Space Folding
+
+![](http://oroboro-oroboro.rhcloud.com/file/9KH6j72rAJ3xaZDzF)
+
+
+
+
+
+
+
+
+The square is shown for compararison with the first iteration. The marked pixel gets repeated to improve redability. This brings an improvement in information density of a factor of at least 2. 
+
 ## Generalization To Higher Dimmensions
 ## Applications
 ### Large Text
