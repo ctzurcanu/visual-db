@@ -31,7 +31,7 @@ Start: X
 Rules: X=+YF-XFX-FY+;Y=-XF+YFY+FX-;F=F
 Angle: 90 deg
 
-![](http://oroboro-oroboro.rhcloud.com/file/dbb3DzLC3xSkYAehp)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/dbb3DzLC3xSkYAehp.svg)
 
 
 
@@ -86,14 +86,14 @@ Meets the most characteristics. Even better when the 90 degree angles are rounde
 
 ### Proposed Fractal
 
-Hoever we can find an even better solution that retains all the advantageous characteristics of Hilbert and even upgrade on local symmetry, minimisation of used shapes. Also the ratio w/h ia 3/2: advantageous for most viewports.
+Hoever we can find an even better solution that retains all the advantageous characteristics of Hilbert and even upgrade on local symmetry, minimisation of used shapes. Also the ratio w/h is 3/2: advantageous for most viewports.
 
 We will explore the curve produced by:
 Start: F
 Rules: F=FF+FFF+FF
 Angle: 90 deg
 
-![](http://oroboro-oroboro.rhcloud.com/file/hXedrCQpsxcdRBTda)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/hXedrCQpsxcdRBTda.svg)
 
 
 
@@ -137,7 +137,7 @@ Angle: 90 deg
 
 
 The initial shape that spans the F production rule is a circle arc with a 90 deg angle in order to provide a continous curve without angles. For this purpuse the positions 2, 3, 5, 6 of the first rule have to have inverse sense than the arc on positions 1, 4, 7.
-![](http://oroboro-oroboro.rhcloud.com/file/H7RT6gcDCdgAsBAc3)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/H7RT6gcDCdgAsBAc3.svg)
 
 
 
@@ -199,11 +199,14 @@ We do not need to calculate the points for the next iterations explicitly since 
 ### Pixel Approximation
 We will consider a more restrictive case where the curve is approximated to pixels or squares and the curve is only used as a reading guide.
 
-![](http://oroboro-oroboro.rhcloud.com/file/LHX2kpsqiag83DC2s)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/LHX2kpsqiag83DC2s.svg)
+
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/dgssMMAW7bohhTCyM.svg)
+With reading direction guides.
 
 #### Space Folding
 
-![](http://oroboro-oroboro.rhcloud.com/file/9KH6j72rAJ3xaZDzF)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/yvk7wDroGZrtBkTpf.svg)
 
 
 
@@ -216,12 +219,16 @@ The square is shown for compararison with the first iteration. The marked pixel 
 
 ## Generalization To Higher Dimmensions
 ## Applications
+### Binary Tree
 ### Large Text
 ### Knowledge Systems
 ### Source Code
 ### DNA String
 ### Stock Market
 ### KV Ordered DBs
+### Automatons & Nano Robots
+
+### Construction of Synthetic Organs
 ## Conclusions
 
 
