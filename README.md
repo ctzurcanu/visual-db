@@ -31,7 +31,7 @@ Start: X
 Rules: X=+YF-XFX-FY+;Y=-XF+YFY+FX-;F=F
 Angle: 90 deg
 
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/dbb3DzLC3xSkYAehp.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/dbb3DzLC3xSkYAehp.svg)
 
 
 
@@ -93,7 +93,7 @@ Start: F
 Rules: F=FF+FFF+FF
 Angle: 90 deg
 
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/hXedrCQpsxcdRBTda.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/hXedrCQpsxcdRBTda.svg)
 
 
 
@@ -137,7 +137,7 @@ Angle: 90 deg
 
 
 The initial shape that spans the F production rule is a circle arc with a 90 deg angle in order to provide a continous curve without angles. For this purpuse the positions 2, 3, 5, 6 of the first rule have to have inverse sense than the arc on positions 1, 4, 7.
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/H7RT6gcDCdgAsBAc3.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/H7RT6gcDCdgAsBAc3.svg)
 
 
 
@@ -199,14 +199,14 @@ We do not need to calculate the points for the next iterations explicitly since 
 ### Pixel Approximation
 We will consider a more restrictive case where the curve is approximated to pixels or squares and the curve is only used as a reading guide.
 
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/LHX2kpsqiag83DC2s.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/LHX2kpsqiag83DC2s.svg)
 
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/dgssMMAW7bohhTCyM.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/dgssMMAW7bohhTCyM.svg)
 With reading direction guides.
 
 #### Space Folding
 
-![](https://raw.githubusercontent.com/ctzurcanu/visual-db/master/images/yvk7wDroGZrtBkTpf.svg)
+![](https://raw.githubusercontent.com/ctzurcanu/visual-db/blob/master/images/yvk7wDroGZrtBkTpf.svg)
 
 
 
